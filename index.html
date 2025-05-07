@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfacher Notion-Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h2>Dokumente</h2>
+            <input type="search" id="searchDocuments" placeholder="Dokumente suchen..." class="sidebar-search">
+            <button id="btnNewDocument" class="sidebar-button">Neues Dokument</button>
+            <ul id="documentList">
+                <!-- Dokumente werden hier per JS eingefügt -->
+            </ul>
+        </div>
+        <div class="editor-main">
+            <div id="loadingIndicator" class="loading-indicator">
+                <div class="spinner"></div>
+                <span>Laden...</span>
+            </div>
+            <div class="editor-container">
+                <div class="toolbar">
+                    <button id="btnHeading1" aria-label="Überschrift 1 formatieren">H1</button>
+                    <button id="btnHeading2" aria-label="Überschrift 2 formatieren">H2</button>
+                    <button id="btnParagraph" aria-label="Absatz formatieren">P</button>
+                    <button id="btnBold" aria-label="Fett formatieren"><b>B</b></button>
+                    <button id="btnItalic" aria-label="Kursiv formatieren"><i>I</i></button>
+                    <button id="btnUnderline" aria-label="Unterstrichen formatieren"><u>U</u></button>
+                    <button id="btnInsertImage" aria-label="Bild einfügen">Bild einfügen</button>
+                    <button id="btnExportHTML" aria-label="Als HTML exportieren">Export HTML</button>
+                </div>
+                <div id="editor" class="editor-content" contenteditable="true">
+                    <!-- Inhalt wird per JS geladen -->
+                </div>
+                <div id="saveStatus" class="save-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="customPromptOverlay" class="message-box-overlay">
+        <div class="message-box">
+            <p id="customPromptMessage">Gib die URL des Bildes ein oder wähle eine Datei aus:</p>
+            <input type="text" id="customPromptInput" placeholder="https://beispiel.com/bild.jpg">
+            <p style="margin-top: 10px; margin-bottom: 5px; text-align: center;">ODER</p>
+            <input type="file" id="customPromptFileInput" accept="image/*" style="margin-bottom: 15px;">
+            <div>
+                <button id="customPromptConfirm" class="confirm-button">OK</button>
+                <button id="customPromptCancel" class="cancel-button">Abbrechen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
