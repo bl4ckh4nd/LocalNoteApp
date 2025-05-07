@@ -12,6 +12,10 @@ A simple note-taking application built with HTML, CSS, and vanilla JavaScript. T
 - **HTML Export**: Export your documents as HTML files.
 - **Responsive Design**: Adapts to various screen sizes.
 
+## Download
+
+Download the file under "Releases" to install and run the application locally.
+
 ## Screenshot
 
 ![LocalNoteApp Screenshot](localnoteapp.png)
