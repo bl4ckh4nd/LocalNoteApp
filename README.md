@@ -14,7 +14,7 @@ A simple note-taking application built with HTML, CSS, and vanilla JavaScript. T
 
 ## Screenshot
 
-![LocalNoteApp Screenshot](screenshot.png)
+![LocalNoteApp Screenshot](localnoteapp.png)
 
 ## How It Works
 
