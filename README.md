@@ -4,16 +4,17 @@ A simple note-taking application built with HTML, CSS, and vanilla JavaScript. T
 
 ## Features
 
-- **Rich Text Editing**: Format your notes with headings (H1, H2), paragraphs, bold, italic, and underline styles.
-- **Document Management**:
-    - Create new documents.
-    - Rename existing documents.
-    - Delete documents.
-- **Image Support**: Insert images into your notes by providing a URL or uploading an image file.
+- **Rich Text Editing**: Format notes with headings, paragraphs, bold, italic, and underline.
+- **Document Management**: Create, rename, and delete documents.
+- **Image Support**: Insert images via URL or upload.
 - **Local Storage**: All your documents are saved in the browser's local storage, ensuring your data persists between sessions.
 - **Search Functionality**: Quickly find documents using the search bar.
 - **HTML Export**: Export your documents as HTML files.
-- **Responsive Design**: The application is designed to work on various screen sizes.
+- **Responsive Design**: Adapts to various screen sizes.
+
+## Screenshot
+
+![LocalNoteApp Screenshot](screenshot.png)
 
 ## How It Works
 
